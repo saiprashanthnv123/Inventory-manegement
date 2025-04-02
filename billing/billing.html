@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing System</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Use the same styling as the dashboard -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <nav>
+        <h1>Billing System</h1>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="add-item.html">Add Item</a></li>
+            <li><a href="view-item.html">View Inventory</a></li>
+            <li><a href="billing.html" class="active">Billing</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Billing System</h2>
+
+        <!-- Customer Details -->
+        <div class="customer-details">
+            <h3>Customer Details</h3>
+            <label for="customer-name">Name:</label>
+            <input type="text" id="customer-name" placeholder="Enter Customer Name">
+
+            <label for="customer-phone">Phone Number:</label>
+            <input type="text" id="customer-phone" placeholder="Enter Customer Phone">
+        </div>
+
+        <!-- Select Items for Billing -->
+        <div class="billing-section">
+            <h3>Select Items</h3>
+            <label for="item-select">Choose Item:</label>
+            <select id="item-select">
+                <option value="">Loading items...</option>
+            </select>
+
+            <label for="item-qty">Quantity:</label>
+            <input type="number" id="item-qty" min="1" placeholder="Enter Quantity">
+
+            <button id="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Cart Display -->
+        <h3>Cart</h3>
+        <table id="cart-table">
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Remove</th>
+            </tr>
+        </table>
+
+        <button id="confirm-purchase">Confirm Purchase</button>
+    </div>
+
+    <script type="module" src="billing.js"></script>
+</body>
+</html>
