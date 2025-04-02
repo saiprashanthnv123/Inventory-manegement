@@ -1,0 +1,8 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyCymHpF7TcGBrjgOOqj6qIX1Djl4TSm-38",
+  authDomain: "inventorymanager-ac0b9.firebaseapp.com",
+  projectId: "inventorymanager-ac0b9",
+  storageBucket: "inventorymanager-ac0b9.firebasestorage.app",
+  messagingSenderId: "950166134114",
+  appId: "1:950166134114:web:b853b87b957da39506e03b"
+};
